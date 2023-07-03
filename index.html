@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz do Miguel</title>
+</head>
+<body>
+    <h1>QUIIIIIIIIIIIS DO MIGUEL</h1>
+    <p>Você está preparado?</p>
+    <input type="text" id="resposta1">
+
+    <p>Qual é o seu nome?</p>
+    <input type="text" id="nome">
+
+    <button onclick="exibirResposta()">Enviar</button>
+
+    <script>
+        function exibirResposta() {
+            var resposta1 = document.getElementById("resposta1").value;
+            var nome = document.getElementById("nome").value;
+
+            alert(`Olá, ${nome}! Você respondeu: "${resposta1}"`);
+        }
+    </script>
+</body>
+</html> 
